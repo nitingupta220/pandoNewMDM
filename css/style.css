@@ -116,7 +116,7 @@ body {
     height: calc( 100vh - 200px);
 }
 
-.data table {
+.data table, tr,td {
     border-collapse: separate;
     border-spacing: 0 7px;
 }
@@ -153,10 +153,11 @@ th {
     z-index: 9999999 !important;
 }
 
-.data span .fa-angle-down {
+.data a .fa-angle-down {
     float: right;
     color: #616161;
     cursor: pointer;
+    font-size: 20px;
 
 }
 

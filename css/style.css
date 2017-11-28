@@ -99,7 +99,7 @@ body {
 
 .filters ::-webkit-input-placeholder {
     padding: 10px 0 10px 30px;
-    background-image: url(Images/search.svg);
+    background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: 7%;
     background-size: 13px 30px;
@@ -107,13 +107,13 @@ body {
 
 .data {
     position: relative;
-    top: 154px;
+    top: 160px;
     width: 100%;
 
 }
 
 .data .table-responsive {
-    height: calc( 98vh - 200px);
+    height: calc( 100vh - 200px);
 }
 
 .data table {
@@ -151,4 +151,41 @@ th {
     position: -webkit-sticky;
     top: 0px;
     z-index: 9999999 !important;
+}
+
+.data span .fa-angle-down {
+    float: right;
+    color: #616161;
+    cursor: pointer;
+
+}
+
+.data span .fa-pencil {
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(249, 249, 249, 1);
+    border-radius: 3px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(209, 209, 209, 1);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: white;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: white;
 }

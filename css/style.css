@@ -116,7 +116,9 @@ body {
     height: calc( 100vh - 200px);
 }
 
-.data table, tr,td {
+.data table,
+tr,
+td {
     border-collapse: separate;
     border-spacing: 0 7px;
 }
@@ -136,7 +138,10 @@ body {
 
 .data .table > thead:first-child > tr:first-child > th {
     border: 2px solid rgba(255, 255, 255, 1);
-
+    background-image: -webkit-linear-gradient(-270deg, rgba(229, 210, 219, 1) 0%, rgba(220, 220, 236, 1) 34%, rgba(193, 203, 231, 1) 100%);
+    background-image: -moz-linear-gradient(-270deg, rgba(229, 210, 219, 1) 0%, rgba(220, 220, 236, 1) 34%, rgba(193, 203, 231, 1) 100%);
+    background-image: -o-linear-gradient(-270deg, rgba(229, 210, 219, 1) 0%, rgba(220, 220, 236, 1) 34%, rgba(193, 203, 231, 1) 100%);
+    background-image: linear-gradient(-270deg, rgba(229, 210, 219, 1) 0%, rgba(220, 220, 236, 1) 34%, rgba(193, 203, 231, 1) 100%);
 }
 
 .data .table-bordered > tbody > tr > td {
@@ -153,7 +158,7 @@ th {
     z-index: 9999999 !important;
 }
 
-.data a .fa-angle-down {
+.data span .fa-angle-down {
     float: right;
     color: #616161;
     cursor: pointer;

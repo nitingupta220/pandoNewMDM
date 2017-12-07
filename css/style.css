@@ -41,6 +41,44 @@ body {
     padding: 12px 5px 10px 16px;
 }
 
+.dropdown .btn-primary {
+    height: 30px;
+    width: 160px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(169, 193, 253, 1);
+    border-radius: 5px;
+    color: #404040;
+    text-align: left;
+}
+
+.dropdown .btn-primary:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(169, 193, 253, 1);
+    border-radius: 5px;
+    color: #404040;
+}
+
+.dropdown .btn-primary:active:focus {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(169, 193, 253, 1);
+    border-radius: 5px;
+    color: #404040;
+}
+
+.dropdown .open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(169, 193, 253, 1);
+    border-radius: 5px;
+    color: #404040;
+}
+
+.dropdown .caret {
+    float: right;
+    margin-top: 8px;
+}
+
 .filters {
     position: fixed;
     top: 60px;
@@ -155,7 +193,6 @@ th {
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
-    z-index: 9999999 !important;
 }
 
 .data span .fa-angle-down {
@@ -174,9 +211,10 @@ th {
 .data span .fa-floppy-o {
     height: 14px;
     width: 14px;
-   margin-right: 10px;
+    margin-right: 10px;
     cursor: pointer;
 }
+
 .data span .fa-times {
     float: right;
     padding-top: 0.5em;

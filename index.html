@@ -40,15 +40,19 @@
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="col-sm-2 col-md-2 col-lg-2">
                     <p>Master</p>
-                    <select>
-                        <option><a href="#/!">Users</a></option>
-                        <option><a href="#!logorg">LogOrgs</a></option>
-                        <option><a href="#!consignees">Consignees</a></option>
-                        <option><a href="#!vendor">Vendor</a></option>
-                        <option><a href="#!material">Material</a></option>
-                        <option><a href="#!bu&cc">BU and CC</a></option>
-                        <option><a href="#!detention">Detention matrix</a></option>
-                    </select>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span id="selected">Choose</span>
+  <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/">Users</a></li>
+                            <li><a href="#logorg">LogOrg</a></li>
+                            <li><a href="#consignees">Consignees</a></li>
+                            <li><a href="#vendor">Vendor</a></li>
+                            <li><a href="#bu&cc">BU and CC</a></li>
+                            <li><a href="#detention">Detention Matrix</a></li>
+                            <li><a href="#material">Materials</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-sm-2 cl-md-2 col-lg-2">
                     <p>Region</p>

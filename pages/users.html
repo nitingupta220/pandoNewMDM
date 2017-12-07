@@ -1,172 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Users</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
-    <script src="https://use.fontawesome.com/4bd930b540.js"></script>
-
-
-</head>
-
-<body>
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="Images/Group.png" alt="" height="30" width="150"></a>
-                <a href="#" class="navbar-brand initial">A</a>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid filters">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="col-sm-2 col-md-2 col-lg-2">
-                    <p>Master</p>
-                    <select onchange="window.location.href=this.value;">
-                        <option value="users.htm">Users</option>
-                        <option value="logorg.htm">LogOrgs</option>
-                        <option value="consignees.htm">Consignees</option>
-                        <option value="vendor.htm">Vendor</option>
-                        <option value="material.htm">Material</option>
-                        <option value="bu&cc.htm">BU and CC</option>
-                        <option value="detention.htm">Detention matrix</option>
-                    </select>
-                </div>
-                <div class="col-sm-2 cl-md-2 col-lg-2">
-                    <p>Region</p>
-                    <select>
-                        <option value="all">All</option>
-                        <option value="north">North</option>
-                        <option value="south">South</option>
-                        <option value="east">East</option>
-                        <option value="west">West</option>
-                    </select>
-                </div>
-                <div class="col-sm-5 col-md-5 col-lg-5 col-xs-hidden"></div>
-                <div class="col-sm-2 col-md-2 col-lg-2 search">
-                    <input type="text" placeholder="Search">
-                </div>
-                <div class="col-sm-1 add">
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid data">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="table-responsive table-fixed">
-                    <table class="table table-bordered" style="width: 100%;">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Account status</th>
-                                <th>Role</th>
-                                <th>Phone</th>
-                                <th>Email</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-toggle="collapse" href="#demo">
-                                <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
-                                <td>Active</td>
-                                <td>Super Admin</td>
-                                <td>9841611850</td>
-                                <td>suresh.venkatesan@philips.com</td>
-                            </tr>
-                            <tr id="demo" class="collapse">
-                                <td colspan="14"> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
-                            </tr>
-                            <tr>
-                                <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
-                                <td>Active</td>
-                                <td>Super Admin</td>
-                                <td>9841611850</td>
-                                <td>suresh.venkatesan@philips.com</td>
-                            </tr>
-                            <tr>
-                                <td><span><i class="fa fa-pencil"></i></span> Mr. Deepak Kumar</td>
-                                <td>Active</td>
-                                <td>LogOrg</td>
-                                <td>0987654321</td>
-                                <td>deepaksharma@gmail.com <a href="#collapse1" data-toggle="collapse" data-parent="#accordion"><span><i class="fa fa-angle-down"></i></span></a></td>
-                            </tr>
-                            <tr class="moreDetails">
-                                <td colspan="10" style="border: none;padding: 0 8px 0 8px;">
-                                    <div id="collapse1" class="panel-collapse collapse">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="col-sm-2">
-                                                    <span>Admin</span>
-                                                    <p>Selvam Deenadayalan</p>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <span>Assigned LogOrg</span>
-                                                    <p>Philips Lighting India - Chennai</p>
-                                                </div>
-                                                <div class="col-sm-2">
-                                                    <span>Assigned gate</span>
-                                                    <p>Gate 1</p>
-                                                </div>
-                                            </div>
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="table-responsive table-fixed">
+            <table class="table table-bordered" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Account status</th>
+                        <th>Role</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-toggle="collapse" href="#demo">
+                        <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
+                        <td>Active</td>
+                        <td>Super Admin</td>
+                        <td>9841611850</td>
+                        <td>suresh.venkatesan@philips.com</td>
+                    </tr>
+                    <tr id="demo" class="collapse">
+                        <td colspan="14"> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</td>
+                    </tr>
+                    <tr>
+                        <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
+                        <td>Active</td>
+                        <td>Super Admin</td>
+                        <td>9841611850</td>
+                        <td>suresh.venkatesan@philips.com</td>
+                    </tr>
+                    <tr>
+                        <td><span><i class="fa fa-pencil"></i></span> Mr. Deepak Kumar</td>
+                        <td>Active</td>
+                        <td>LogOrg</td>
+                        <td>0987654321</td>
+                        <td>deepaksharma@gmail.com <a href="#collapse1" data-toggle="collapse" data-parent="#accordion"><span><i class="fa fa-angle-down"></i></span></a></td>
+                    </tr>
+                    <tr class="moreDetails">
+                        <td colspan="10" style="border: none;padding: 0 8px 0 8px;">
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="col-sm-2">
+                                            <span>Admin</span>
+                                            <p>Selvam Deenadayalan</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span>Assigned LogOrg</span>
+                                            <p>Philips Lighting India - Chennai</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <span>Assigned gate</span>
+                                            <p>Gate 1</p>
                                         </div>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
-                                <td>Active</td>
-                                <td>Super Admin</td>
-                                <td>9841611850</td>
-                                <td>suresh.venkatesan@philips.com</td>
-                            </tr>
-                            <tr>
-                                <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
-                                <td>Active</td>
-                                <td>Super Admin</td>
-                                <td>9841611850</td>
-                                <td>suresh.venkatesan@philips.com</td>
-                            </tr>
-                            <tr>
-                                <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
-                                <td>Active</td>
-                                <td>Super Admin</td>
-                                <td>9841611850</td>
-                                <td>suresh.venkatesan@philips.com</td>
-                            </tr>
-                            <tr>
-                                <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
-                                <td>Active</td>
-                                <td>Super Admin</td>
-                                <td>9841611850</td>
-                                <td>suresh.venkatesan@philips.com</td>
-                            </tr>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
+                        <td>Active</td>
+                        <td>Super Admin</td>
+                        <td>9841611850</td>
+                        <td>suresh.venkatesan@philips.com</td>
+                    </tr>
+                    <tr>
+                        <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
+                        <td>Active</td>
+                        <td>Super Admin</td>
+                        <td>9841611850</td>
+                        <td>suresh.venkatesan@philips.com</td>
+                    </tr>
+                    <tr>
+                        <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
+                        <td>Active</td>
+                        <td>Super Admin</td>
+                        <td>9841611850</td>
+                        <td>suresh.venkatesan@philips.com</td>
+                    </tr>
+                    <tr>
+                        <td><span><i class="fa fa-pencil"></i></span> Mr. Inbaraj K</td>
+                        <td>Active</td>
+                        <td>Super Admin</td>
+                        <td>9841611850</td>
+                        <td>suresh.venkatesan@philips.com</td>
+                    </tr>
 
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
+                </tbody>
+            </table>
         </div>
     </div>
-    <script src="script.js"></script>
-</body>
 
-</html>
+</div>

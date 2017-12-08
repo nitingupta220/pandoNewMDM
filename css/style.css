@@ -158,7 +158,7 @@ body {
 tr,
 td {
     border-collapse: separate;
-    border-spacing: 0 7px;
+    border-spacing: 0 5px;
 }
 
 .data .table-bordered {
@@ -174,7 +174,7 @@ td {
 
 }
 
-.data .table > thead:first-child > tr:first-child > th {
+.table > thead:first-child > tr:first-child > th {
     border: 2px solid rgba(255, 255, 255, 1);
     background-image: -webkit-linear-gradient(-270deg, rgba(229, 210, 219, 1) 0%, rgba(220, 220, 236, 1) 34%, rgba(193, 203, 231, 1) 100%);
     background-image: -moz-linear-gradient(-270deg, rgba(229, 210, 219, 1) 0%, rgba(220, 220, 236, 1) 34%, rgba(193, 203, 231, 1) 100%);
@@ -193,6 +193,27 @@ th {
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
+    z-index: 999;
+}
+
+.data .table > tbody > .moreDetails > td {
+    padding: 0 10px;
+    border: none;
+    background-color: rgba(247, 249, 250, 1) !important;
+    box-shadow: 0px 2px 7px 0px rgba(215, 215, 215, 0.5) !important
+}
+
+.moreDetails p {
+    font-size: 12px;
+    color: rgba(64, 64, 64, 1);
+    text-align: left;
+}
+
+.moreDetails h6 {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(64, 64, 64, 1);
+    text-align: left;
 }
 
 .data span .fa-angle-down {
@@ -200,7 +221,35 @@ th {
     color: #616161;
     cursor: pointer;
     font-size: 20px;
+}
 
+.data span .fa-ellipsis-v {
+    float: right;
+    cursor: pointer;
+    color: #616161;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.dropdown-menu > li > a {
+    padding: 3px 7px;
+    font-size: 14px;
+    color: rgba(64, 64, 64, 1);
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-menu > li > a:hover {
+    background: white;
+    cursor: pointer;
+}
+
+.dropdown-menu hr {
+    margin-top: 0px;
+    margin-bottom: 3px;
+    border-top: 1px solid #eee;
+    width: 90%;
+    border: 1px solid rgba(222, 225, 238, 1);
 }
 
 .data span .fa-pencil {
@@ -232,6 +281,57 @@ th {
     text-align: left;
     outline: none;
     padding-left: 1em;
+}
+
+.popOver {
+    max-width: 123px;
+    display: inline-block;
+    margin-right: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.popOver a {
+    text-decoration: none;
+    color: rgba(20, 20, 20, 1);
+}
+
+.vendorRoutes .table > thead:first-child > tr > th {
+    background-color: rgba(247, 249, 250, 1) !important;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    color: #404040;
+    text-align: left;
+    z-index: 1;
+    vertical-align: middle;
+    line-height: 0.5;
+    font-size: 12px;
+}
+
+.vendorRoutes .table > tbody > tr > td {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 0px 0px #d7d7d7;
+    border: 0;
+    border-right: 1px solid #eeebeb;
+}
+
+.vendorRoutes .collapse {
+    padding-left: 2em;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1;
+}
+.vendorRoutes label {
+    font-size: 14px;
+}
+.vendorRoutes span {
+    font-style: italic;
+}
+.vendorRoutes input {
+    height: 13px !important;
+    width: none !important;
 }
 
 ::-webkit-scrollbar {

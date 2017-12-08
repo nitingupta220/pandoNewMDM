@@ -34,6 +34,10 @@ app.config(function ($routeProvider, $locationProvider) {
         .when("/detention", {
             templateUrl: "pages/detention.html",
             controller: "detentionController"
+        })
+        .when("/rate", {
+            templateUrl: "pages/rate.html",
+            controller: "rateController"
         });
 
 });
